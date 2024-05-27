@@ -14,10 +14,9 @@ def prior(num1,num2):
         if priors[i] != 1:
             for j in range(i+i, num2+1, i):
                 priors[j] = 1
-
+    
     for i in range(num1,num2+1):
         if priors[i] == 0:
             print(i)
-prior(1,1)
-print()
+
 prior(m,n)

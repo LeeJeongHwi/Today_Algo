@@ -1,0 +1,7 @@
+2
+1
+hat headgear
+3
+mask face
+sunglasses face
+makeup face

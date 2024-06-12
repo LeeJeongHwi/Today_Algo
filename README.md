@@ -6,10 +6,10 @@
 
 ## BOJ : leepic
 
-
-노션 정리
-https://leepaper.notion.site/PS-LIST-01562ca4bdd74620a648cff7f05246ee?pvs=4
+블로그 정리
+* https://fruitnet-blog.vercel.app/
 
 
 문제 목록 참고  
-https://github.com/tony9402/baekjoon
+* https://github.com/tony9402/baekjoon
+* solved.ac/class

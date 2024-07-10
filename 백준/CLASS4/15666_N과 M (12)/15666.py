@@ -7,30 +7,21 @@ visit = [False for _ in range(n)]
 nlist.sort()
 
 ans = []
-def back(count):
-    if count == m:
-        prev = None
-        for i,v in enumerate(ans):
-            if i == 0:
-                prev = ans[i]
-                continue
-            if prev <= ans[i]:
-                continue
-            else:
-                return
-            
-        print(' '.join(map(str,ans)))
+def back(count, num_list):
+    if count == m: # 조건 만족
+        ans.append(tuple(num_list))
         return
-    
+
     for i in range(n):
-        if ans:
-            if ans[-1] <= nlist[i]:
-                pass
-        ans.append(nlist[i])
+        if num_list:
+            if num_list[-1] > nlist[i]:
+                continue
         visit[i] = True
-        back(count+1)
+        num_list.append(nlist[i])
+        back(count+1,num_list)
         visit[i] = False
-        ans.pop()
+        num_list.pop()
 
-back(0)
-
+back(0, [])
+for a in dict.fromkeys(ans):
+    print(*a)
